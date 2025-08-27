@@ -1,0 +1,21 @@
+[build]
+publish = "."
+command = "echo 'Building projects...'"
+
+# Redirect project1
+[[redirects]]
+from = "/testimonial-card"
+to = "/testimonial-card/index.html"
+status = 200
+
+# Redirect project2
+[[redirects]]
+from = "/blog-card"
+to = "/blog-card/index.html"
+status = 200
+
+# Redirect project3
+#[[redirects]]
+#from = "/project3"
+#to = "/project3/index.html"
+#status = 200
