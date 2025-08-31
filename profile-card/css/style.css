@@ -12,8 +12,6 @@ body {
   text-rendering: optimizeLegibility;
   background: linear-gradient(to top, #272727, #ffffff);
 }
-
-
 * {
   box-sizing: border-box;
 }
