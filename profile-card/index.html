@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
@@ -23,11 +27,36 @@
       /* You may write styles inside this <style> tag or within `css/style.css`. */
     </style>
   </head>
-  <body>
+  <body class="bg-gradient-to-t from-gray-50 to-gray-100">
     <!-- Add your site or application content here -->
-    <h1 class="text-5xl text-center font-semibold pt-20">
-      Hello world! Write your content here.
-    </h1>
+    <div class="flex items-center justify-center absolute inset-0">
+      <div
+        class="bg-white rounded-lg shadow-sm h-[428px] w-[340px] absolute flex flex-col items-center pt-6 pb-6 pl-4 pr-4"
+      >
+        <img src="./img/profile.png" alt="profile image" class="items-center h-[64px] w-[64px]" />
+        <div class="flex flex-col gap-1 pt-6 pb-6">
+          <h1 class="text-center text-xl font-medium">Sarah Dole</h1>
+          <p class="text-gray-500 text-sm">Front End Engineer @ Microsoft</p>
+        </div>
+        <div class="flex flex-col items-center gap-8">
+          <div class="intro">
+            <p class="text-gray-500 text-center">
+              I turn coffee into bugs which are fixed by someone else. Certified
+              Stack Overflow and ChatGPT developer.
+            </p>
+          </div>
+          <div class="flex flex-col gap-8 w-full">
+            <button class="bg-indigo-700 text-white px-6 py-3 w-full rounded-md shadow-md hover:bg-indigo-800 transition">Contact me</button>
+            <ul class="flex gap-x-8 items-center justify-center">
+              <li><i class="text-indigo-700 fa-brands fa-github"></i></li>
+              <li><i class="text-indigo-700 fa-brands fa-linkedin"></i></li>
+              <li><i class="text-indigo-700 fa-brands fa-instagram"></i></li>
+              <li><i class="text-indigo-700 fa-brands fa-x-twitter"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- 
       Sarah Dole
@@ -45,10 +74,10 @@
         >GreatFrontEnd Projects</a
       >. Built by
       <a
-              href="https://www.greatfrontend.com/projects/u/kumarhites"
-              target="_blank"
-      >Hitesh</a
-      >.
+        href="https://www.greatfrontend.com/projects/u/kumarhites"
+        target="_blank"
+        >Hitesh</a
+      >
     </div>
 
     <script src="js/index.js"></script>
